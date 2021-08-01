@@ -1,0 +1,91 @@
+.logo-small {
+  max-width: 40px;
+  border-radius: 8px;
+}
+
+label {
+  display: none
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.branding .name {
+  align-items: center;
+}
+
+.branding .name a {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+}
+
+.navbar {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  gap: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 3em;
+}
+
+.navbar a {
+  color: var(--text-secondary);
+  transition: filter 0.3s ease;
+  font-size: 1.2rem;
+  letter-spacing: 0.7px;
+}
+
+.navbar a:hover {
+  filter: brightness(120%);
+}
+
+#check {
+  z-index: 2;
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .navbar ul {
+    display: none;
+  }
+  .branding .name a {
+    font-size: 1.5rem;
+  }
+  .logo-small {
+    max-width: 35px;
+    border-radius: 8px;
+  }
+
+  #check:checked ~ .navbar ul {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  label {
+    display: block;
+  }
+
+  label i {
+    z-index: 4;
+    position: relative;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+  }
+}

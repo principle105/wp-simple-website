@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>wordPractice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="./styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/home.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/navbar.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <!-- Nav bar -->
+    <input type="checkbox" id="check"/>
+    <div class="navbar">
+      <div class="branding">
+        <img class="logo-small" src="./images/logo.png"/>
+        <h1 class="name">
+          <a href="/">wordPractice</a>
+        </h1>
+      </div>
+      <ul>
+        <li>
+          <a href="/commands.html">Commands</a>
+        </li>
+        <li>
+          <a href="https://principle105.github.io/wordpractice-privacy-policy/rules.html" target="_blank">Rules</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/wordpractice" target="_blank">Support</a>
+        </li>
+      </ul>
+      <label for="check">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="title">
+          <span id="sentence" class="sentence"></span>
+          <span class="cursor"></span>
+        </div>
+        <h3 class="description">Practice your typing skills while having fun, compete with typists from around the world.</h3>
+      </div>
+      <div class="action-btns">
+        <a href="https://discord.com/oauth2/authorize?client_id=743183681182498906&permissions=388160&scope=bot" class="invite-btn" target="_blank">Invite</a>
+      </div>
+    </div>
+
+
+    <div class="showcase">
+      <div class="showcase-row reverse">
+        <div class="showcase-img">
+          <img class="logo-large" src="./images/shop.png"/>
+        </div>
+        <div class="showcase-text">
+          <h2 class="title">Fun and Engaging</h2>
+          <p class="description">Get motivated to improve your typing speed by collecting badges. New badges are made every month.</p>
+        </div>
+      </div>
+
+      <div class="showcase-row">
+        <div class="showcase-img">
+          <img class="logo-large" src="./images/season.png"/>
+        </div>
+        <div class="showcase-text">
+          <h2 class="title">Competitive</h2>
+          <p class="description">Compete against typists from around the world in the monthly season.</p>
+        </div>
+      </div>
+
+      <div class="showcase-row reverse">
+        <div class="showcase-img">
+          <img class="logo-large" src="./images/scores.png"/>
+        </div>
+        <div class="showcase-text">
+          <h2 class="title">Detailed Statistics</h2>
+          <p class="description">Learn how you can improve your typing skills with detailed statistics and graphs.</p>
+        </div>
+      </div>
+
+      <div class="showcase-row">
+        <div class="showcase-img">
+          <img class="logo-large" src="./images/test.png"/>
+        </div>
+        <div class="showcase-text">
+          <h2 class="title">Customizable</h2>
+          <p class="description">Change everything from the test length, theme, language, difficulty, type and much more!</p>
+        </div>
+      </div>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>

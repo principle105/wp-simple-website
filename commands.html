@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Commands</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="./styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/commands.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/navbar.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <!-- Nav bar -->
+    <input type="checkbox" id="check"/>
+    <div class="navbar">
+      <div class="branding">
+        <img class="logo-small" src="./images/logo.png"/>
+        <h1 class="name">
+          <a href="/">wordPractice</a>
+        </h1>
+      </div>
+      <ul>
+        <li>
+          <a href="/commands.html">Commands</a>
+        </li>
+        <li>
+          <a href="https://principle105.github.io/wordpractice-privacy-policy/rules.html" target="_blank">Rules</a>
+        </li>
+        <li>
+          <a href="https://discord.gg/wordpractice" target="_blank">Support</a>
+        </li>
+      </ul>
+      <label for="check">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+
+    <h1 class="title">Commands</h1>
+
+    <div class="browser">
+      <div class="category-list">
+        <div class="box-container">
+          <div class="box">
+            <h1 class="list-title">Categories</h1>
+            <div class="categories">
+              <ul>
+                <li>
+                  <button id="All" class="category active" onClick="handleClick(this)">All</button>
+                </li>
+
+                <li>
+                  <button id="Account" class="category" onClick="handleClick(this)">Account</button>
+                </li>
+                  
+                <li>
+                  <button id="Customization" class="category" onClick="handleClick(this)">Customization</button>
+                </li>
+
+                <li>
+                  <button id="Economy" class="category" onClick="handleClick(this)">Economy</button>
+                </li>
+
+                <li>
+                  <button id="Games" class="category" onClick="handleClick(this)">Games</button>
+                </li>
+
+                <li>
+                  <button id="Information" class="category" onClick="handleClick(this)">Information</button>
+                </li>
+
+                <li>
+                  <button id="Server" class="category" onClick="handleClick(this)">Server</button>
+                </li>
+
+                <li>
+                  <button id="Misc" class="category" onClick="handleClick(this)">Misc</button>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="commands"></div>
+    </div>
+
+
+    <script src="commandData.js"></script>
+    <script src="commands.js"></script>
+  </body>
+</html>

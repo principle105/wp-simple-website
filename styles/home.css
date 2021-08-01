@@ -1,0 +1,139 @@
+.logo-large {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 0.6em;
+}
+
+.hero-container {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.hero-text .title {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 2rem;
+  background-color: white;
+  animation: blink .6s linear infinite alternate;
+}
+
+
+
+.hero-text .description {
+  margin: 1rem 0;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+.action-btns {
+  display: flex;
+  align-content: center;
+  gap: 2em;
+}
+
+.action-btns .invite-btn {
+  background: var(--secondary);
+  color: var(--text-primary);
+  padding: 0.85rem 3rem;
+  border-radius: 12px;
+  display: inline-block;
+  transition: filter 200ms ease;
+}
+
+.action-btns .invite-btn:hover {
+  filter: brightness(110%);
+}
+
+.showcase {
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.showcase-row {
+  margin-top: 4em;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 3em;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.showcase-img {
+  width: 55%;
+  display: flex;
+}
+
+.reverse .showcase-img {
+  justify-content: flex-end;
+}
+
+.showcase-text {
+  width: 45%;
+}
+
+.showcase-text .title {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.showcase-text .description {
+  color: var(--text-secondary);
+  font-size: 1.1875rem;
+  line-height: 1.8125rem;
+  letter-spacing: 0.35px;
+}
+
+@media (max-width: 800px) {
+  .showcase-row {
+    flex-direction: column;
+  }
+  .showcase-img, .showcase-text {
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text .title {
+    font-size: 2rem;
+  }
+
+  .hero-text .description {
+    font-size: 1remm;
+  }
+
+  .action-btns {
+    justify-content: center;
+  }
+}
